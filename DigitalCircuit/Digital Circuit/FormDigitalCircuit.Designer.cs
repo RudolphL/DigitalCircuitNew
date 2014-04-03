@@ -47,10 +47,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.helpToolStripButton = new System.Windows.Forms.ToolStripSplitButton();
             this.aboutToolStripButton = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.ilGates = new System.Windows.Forms.ImageList(this.components);
+            this.pbGrid = new System.Windows.Forms.PictureBox();
             this.gbTools.SuspendLayout();
             this.toolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // gbTools
@@ -246,34 +247,34 @@
             this.aboutToolStripButton.Size = new System.Drawing.Size(139, 32);
             this.aboutToolStripButton.Text = "About";
             // 
-            // panel1
+            // ilGates
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel1.Location = new System.Drawing.Point(258, 78);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1212, 763);
-            this.panel1.TabIndex = 16;
+            this.ilGates.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilGates.ImageStream")));
+            this.ilGates.TransparentColor = System.Drawing.Color.Transparent;
+            this.ilGates.Images.SetKeyName(0, "andgate.png");
+            this.ilGates.Images.SetKeyName(1, "notgate.png");
+            this.ilGates.Images.SetKeyName(2, "orgate.png");
+            this.ilGates.Images.SetKeyName(3, "sinkoff.png");
+            this.ilGates.Images.SetKeyName(4, "sinkon.png");
+            this.ilGates.Images.SetKeyName(5, "sourceoff.png");
+            this.ilGates.Images.SetKeyName(6, "sourceon.png");
             // 
-            // imageList
+            // pbGrid
             // 
-            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
-            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList.Images.SetKeyName(0, "andgate.png");
-            this.imageList.Images.SetKeyName(1, "notgate.png");
-            this.imageList.Images.SetKeyName(2, "orgate.png");
-            this.imageList.Images.SetKeyName(3, "sinkoff.png");
-            this.imageList.Images.SetKeyName(4, "sinkon.png");
-            this.imageList.Images.SetKeyName(5, "sourceoff.png");
-            this.imageList.Images.SetKeyName(6, "sourceon.png");
+            this.pbGrid.Location = new System.Drawing.Point(229, 67);
+            this.pbGrid.Name = "pbGrid";
+            this.pbGrid.Size = new System.Drawing.Size(1241, 774);
+            this.pbGrid.TabIndex = 16;
+            this.pbGrid.TabStop = false;
             // 
             // FormDigitalCircuit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1482, 853);
+            this.Controls.Add(this.pbGrid);
             this.Controls.Add(this.btCleargrid);
             this.Controls.Add(this.toolStrip);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.gbTools);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -282,6 +283,7 @@
             this.gbTools.ResumeLayout(false);
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,7 +294,6 @@
         private System.Windows.Forms.GroupBox gbTools;
         private System.Windows.Forms.Button btCleargrid;
         private System.Windows.Forms.ToolStrip toolStrip;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripSplitButton helpToolStripButton;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripButton;
         private System.Windows.Forms.RadioButton rbRemove;
@@ -307,7 +308,8 @@
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ImageList imageList;
+        private System.Windows.Forms.ImageList ilGates;
+        private System.Windows.Forms.PictureBox pbGrid;
     }
 }
 
