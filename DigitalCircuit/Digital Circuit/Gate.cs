@@ -68,6 +68,7 @@ namespace Digital_Circuit
         /// <param name="gr"></param>
         public void DrawGate(Graphics gr)
         {
+
             return;
         }
     }
