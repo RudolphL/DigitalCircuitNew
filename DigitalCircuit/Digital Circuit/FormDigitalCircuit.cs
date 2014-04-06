@@ -20,5 +20,10 @@ namespace Digital_Circuit
             this.StartPosition = FormStartPosition.CenterScreen;
             gridob = new GridObjects();
         }
+
+        private void FormDigitalCircuit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

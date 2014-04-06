@@ -15,12 +15,13 @@ namespace Digital_Circuit
         private List<Boolean> myInputValues; // The input values of the gate
         private Boolean myOutputValue; // The output values of the gate
         // something to paint the pictures, we don't know yet how. (Or hold an image - private Image myimage).
-       
+        private int id;
         // Delegates and events
 
         // Constructor
-        public Gate(int x, int y)
+        public Gate(int id,int x, int y)
         {
+            this.id = id;
             this.x = x;
             this.y = y;
             myConnections = new List<Connection>();
@@ -29,6 +30,10 @@ namespace Digital_Circuit
         }
 
         // Properties
+        public int ID
+        {
+            get { return this.id; }
+        }
         public int X
         {
             get { return this.x; }

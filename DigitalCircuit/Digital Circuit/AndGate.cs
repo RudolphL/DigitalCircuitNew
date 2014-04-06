@@ -16,6 +16,7 @@ namespace Digital_Circuit
         public AndGate(int id, int x, int y)
             :base(id, x, y)
         {
+
         }
 
         // Properties

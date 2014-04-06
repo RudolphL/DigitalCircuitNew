@@ -280,6 +280,7 @@
             this.MaximizeBox = false;
             this.Name = "FormDigitalCircuit";
             this.Text = "Digital Circuit";
+            this.Load += new System.EventHandler(this.FormDigitalCircuit_Load);
             this.gbTools.ResumeLayout(false);
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
