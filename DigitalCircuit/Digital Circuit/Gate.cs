@@ -68,8 +68,18 @@ namespace Digital_Circuit
         /// <param name="gr"></param>
         public void DrawGate(Graphics gr)
         {
+            int length = 20;
+            int width = 10;
+            Pen pen = new Pen(Color.Black, 4);
+            Point a = new Point(x - 10, y - 10);
+            Point b = new Point(x + 10, y + 10);
+            Point c = new Point(x - 10, y + 10);
+            Point d = new Point(x + 10, y - 10);
 
-            return;
+            gr.DrawLine(pen, a, c);
+            gr.DrawLine(pen, c, b);
+            gr.DrawLine(pen, b, d);
+            gr.DrawLine(pen, d, a);
         }
     }
 }
